@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/linearLayout"
+    android:background="#e0000000"
+  >
+
+    <ImageView 
+        android:src="@drawable/ic_sysbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="4"
+        android:id="@+id/back"/>
+    <ImageView 
+        android:src="@drawable/ic_sysbar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="3"
+        android:id="@+id/home"/>
+    <ImageView 
+        android:src="@drawable/ic_sysbar_recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recent_apps"/>
+    <ImageView 
+        android:src="@drawable/ic_sysbar_menu_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="82"
+        android:id="@+id/menu"/>
+    
+</LinearLayout>
