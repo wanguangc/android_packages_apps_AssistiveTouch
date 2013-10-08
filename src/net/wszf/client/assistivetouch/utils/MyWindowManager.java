@@ -15,7 +15,6 @@ import android.view.WindowManager.LayoutParams;
 
 public class MyWindowManager
 	{
-
 		private static FloatTouchView touchView;
 		private static FloatActionView actionView;
 		private static LayoutParams touchLayoutParams;
@@ -41,8 +40,6 @@ public class MyWindowManager
 								touchLayoutParams.format = PixelFormat.RGBA_8888;
 								touchLayoutParams.flags = LayoutParams.FLAG_NOT_TOUCH_MODAL | LayoutParams.FLAG_NOT_FOCUSABLE;
 								touchLayoutParams.gravity = Gravity.LEFT | Gravity.TOP;
-								// smallWindowParams.width = smallWindow.getWidth();
-								// smallWindowParams.height = smallWindow.getHeight();
 								touchLayoutParams.width = 100;
 								touchLayoutParams.height = 100;
 								touchLayoutParams.x = screenWidth;
@@ -84,21 +81,15 @@ public class MyWindowManager
 		public static void createActionWindow(final Context context)
 			{
 				WindowManager windowManager = getWindowManager(context);
-				int screenWidth = windowManager.getDefaultDisplay().getWidth();
-				int screenHeight = windowManager.getDefaultDisplay().getHeight();
 				if (actionView == null)
 					{
 						actionView = new FloatActionView(context);
 						if (actionLayoutParams == null)
 							{
 								actionLayoutParams = new LayoutParams();
-//								actionLayoutParams.x=screenWidth/6;
-////								actionLayoutParams.x = screenWidth / 2 - FloatActionView.viewWidth / 2;
-//								actionLayoutParams.y = screenHeight / 2 - FloatActionView.viewHeight / 2;
 								actionLayoutParams.gravity = Gravity.CENTER;
 								actionLayoutParams.type = LayoutParams.TYPE_SYSTEM_ALERT;
 								actionLayoutParams.format = PixelFormat.RGBA_8888;
-								//actionLayoutParams.gravity = Gravity.LEFT | Gravity.TOP;
 								actionLayoutParams.width = FloatActionView.viewWidth;
 								actionLayoutParams.height = FloatActionView.viewHeight;
 								actionLayoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
