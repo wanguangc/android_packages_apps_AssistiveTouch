@@ -92,12 +92,13 @@ public class MyWindowManager
 						if (actionLayoutParams == null)
 							{
 								actionLayoutParams = new LayoutParams();
-								actionLayoutParams.x=screenWidth/6;
-//								actionLayoutParams.x = screenWidth / 2 - FloatActionView.viewWidth / 2;
-								actionLayoutParams.y = screenHeight / 2 - FloatActionView.viewHeight / 2;
+//								actionLayoutParams.x=screenWidth/6;
+////								actionLayoutParams.x = screenWidth / 2 - FloatActionView.viewWidth / 2;
+//								actionLayoutParams.y = screenHeight / 2 - FloatActionView.viewHeight / 2;
+								actionLayoutParams.gravity = Gravity.CENTER;
 								actionLayoutParams.type = LayoutParams.TYPE_SYSTEM_ALERT;
 								actionLayoutParams.format = PixelFormat.RGBA_8888;
-								actionLayoutParams.gravity = Gravity.LEFT | Gravity.TOP;
+								//actionLayoutParams.gravity = Gravity.LEFT | Gravity.TOP;
 								actionLayoutParams.width = FloatActionView.viewWidth;
 								actionLayoutParams.height = FloatActionView.viewHeight;
 								actionLayoutParams.flags = WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
